@@ -17,3 +17,9 @@ print(verificar_info('Amauri', 'Junior', 'Campinas', 'São Paulo'))
 print(verificar_info('Amauri', 'Campinas', 'São Paulo'))
 print(verificar_info('Junior', 'Campinas', 'São Paulo'))
 print(verificar_info(1, 42, 'Campinas', 'São Paulo'))
+
+
+def unir_palavras(*args):
+    return '_'.join(args)
+
+print(unir_palavras('a','b', 'c'))
