@@ -8,6 +8,14 @@ print(somar_numeros(*numero))
 print(somar_numeros('SP', 1, 2, 3, 42))
 
 
+def somatorio(*args):
+  soma = 0
+  for numero in args:
+    soma += numero
+  return soma
+print(somatorio(10,9,5,6,3,4))
+
+
 def verificar_info(*args):
     if 'Amauri' in args and 'Junior' in args:
         return('Amauri Junior! Seja bem vindo!')
