@@ -46,9 +46,7 @@ aisle     SUM(quantity)
 
 
 
-
-
-
+____________________________________________________________
 
 
 
@@ -75,17 +73,7 @@ SELECT * FROM shoes ORDER BY value;
 SUM(value) FROM shoes GROUP BY value;
 
 
-
-
-
-
-
-
-
-
-
-
-
+____________________________________________________________
 
 
 CREATE TABLE exercise_logs
@@ -110,54 +98,7 @@ SELECT * FROM exercise_logs WHERE calories > 50 OR heart_rate > 100;
 
 
 
-
-
-CREATE TABLE exercise_logs
-    (id INTEGER PRIMARY KEY AUTOINCREMENT,
-    type TEXT,
-    minutes INTEGER, 
-    calories INTEGER,
-    heart_rate INTEGER);
-
-INSERT INTO exercise_logs(type, minutes, calories, heart_rate) VALUES ("biking", 30, 100, 110);
-INSERT INTO exercise_logs(type, minutes, calories, heart_rate) VALUES ("biking", 10, 30, 105);
-INSERT INTO exercise_logs(type, minutes, calories, heart_rate) VALUES ("dancing", 15, 200, 120);
-INSERT INTO exercise_logs(type, minutes, calories, heart_rate) VALUES ("tree climbing", 30, 70, 90);
-INSERT INTO exercise_logs(type, minutes, calories, heart_rate) VALUES ("tree climbing", 25, 72, 80);
-INSERT INTO exercise_logs(type, minutes, calories, heart_rate) VALUES ("rowing", 30, 70, 90);
-INSERT INTO exercise_logs(type, minutes, calories, heart_rate) VALUES ("hiking", 60, 80, 85);
-
-SELECT * FROM exercise_logs WHERE type = "biking" OR type = "hiking" OR type = "tree climbing" OR type = "rowing";
-
-/* IN */
-SELECT * FROM exercise_logs WHERE type IN ("biking", "hiking", "tree climbing", "rowing");
-
-CREATE TABLE drs_favorites
-    (id INTEGER PRIMARY KEY,
-    type TEXT,
-    reason TEXT);
-
-INSERT INTO drs_favorites(type, reason) VALUES ("biking", "Improves endurance and flexibility.");
-INSERT INTO drs_favorites(type, reason) VALUES ("hiking", "Increases cardiovascular health.");
-
-SELECT type FROM drs_favorites;
-
-SELECT * FROM exercise_logs WHERE type IN (
-    SELECT type FROM drs_favorites);
-    
-SELECT * FROM exercise_logs WHERE type IN (
-    SELECT type FROM drs_favorites WHERE reason = "Increases cardiovascular health");
-    
-/* LIKE */
-
-SELECT * FROM exercise_logs WHERE type IN (
-    SELECT type FROM drs_favorites WHERE reason LIKE "%cardiovascular%");
-
-
-
-
-
-
+____________________________________________________________
 
 
 
@@ -204,6 +145,72 @@ SELECT * FROM exercise_logs WHERE type IN (
 
 
 
+____________________________________________________________
+
+
+
+CREATE TABLE artists (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    country TEXT,
+    genre TEXT);
+
+INSERT INTO artists (name, country, genre)
+    VALUES ("Taylor Swift", "US", "Pop");
+INSERT INTO artists (name, country, genre)
+    VALUES ("Led Zeppelin", "US", "Hard rock");
+INSERT INTO artists (name, country, genre)
+    VALUES ("ABBA", "Sweden", "Disco");
+INSERT INTO artists (name, country, genre)
+    VALUES ("Queen", "UK", "Rock");
+INSERT INTO artists (name, country, genre)
+    VALUES ("Celine Dion", "Canada", "Pop");
+INSERT INTO artists (name, country, genre)
+    VALUES ("Meatloaf", "US", "Hard rock");
+INSERT INTO artists (name, country, genre)
+    VALUES ("Garth Brooks", "US", "Country");
+INSERT INTO artists (name, country, genre)
+    VALUES ("Shania Twain", "Canada", "Country");
+INSERT INTO artists (name, country, genre)
+    VALUES ("Rihanna", "US", "Pop");
+INSERT INTO artists (name, country, genre)
+    VALUES ("Guns N' Roses", "US", "Hard rock");
+INSERT INTO artists (name, country, genre)
+    VALUES ("Gloria Estefan", "US", "Pop");
+INSERT INTO artists (name, country, genre)
+    VALUES ("Bob Marley", "Jamaica", "Reggae");
+
+CREATE TABLE songs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    artist TEXT,
+    title TEXT);
+
+INSERT INTO songs (artist, title)
+    VALUES ("Taylor Swift", "Shake it off");
+INSERT INTO songs (artist, title)
+    VALUES ("Rihanna", "Stay");
+INSERT INTO songs (artist, title)
+    VALUES ("Celine Dion", "My heart will go on");
+INSERT INTO songs (artist, title)
+    VALUES ("Celine Dion", "A new day has come");
+INSERT INTO songs (artist, title)
+    VALUES ("Shania Twain", "Party for two");
+INSERT INTO songs (artist, title)
+    VALUES ("Gloria Estefan", "Conga");
+INSERT INTO songs (artist, title)
+    VALUES ("Led Zeppelin", "Stairway to heaven");
+INSERT INTO songs (artist, title)
+    VALUES ("ABBA", "Mamma mia");
+INSERT INTO songs (artist, title)
+    VALUES ("Queen", "Bicycle Race");
+INSERT INTO songs (artist, title)
+    VALUES ("Queen", "Bohemian Rhapsody");
+INSERT INTO songs (artist, title)
+    VALUES ("Guns N' Roses", "Don't cry");
+    
+SELECT title FROM songs WHERE artist = "Queen";
+SELECT name FROM artists WHERE genre = "Pop"  IN (
+    SELECT title FROM songs);
 
 '''
 
