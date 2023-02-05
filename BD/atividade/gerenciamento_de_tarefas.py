@@ -13,3 +13,39 @@ b. O organizador deve ter nome, email e cpf;
 c. As restrições/relacionamentos devem fazer sentido.
 
 '''
+
+import sqlite3
+conexao = sqlite3.connect('./atividade/db.sqlite3')
+
+cursor = conexao.cursor()
+
+categoria = '''
+create table categoria (
+    id integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+    nome VARCHAR(20)
+),
+
+'''
+tarefa = '''
+create table tarefa (
+    nome VARCHAR(20),
+    data VARCHAR(20),
+    categoria_id INT NOT NULL,
+    status_de_conclusao VARCHAR(20),
+        FOREIGN KEY (categoria_id) REFERENCES categoria(id)
+)
+
+'''
+
+cursor.execute(categoria)
+cursor.execute(tarefa)
+conexao.commit() 
+conexao.close()
+
+'''
+CREATE TABLE categoria (
+    id INT NOT NULL,
+    nome VARCHAR(100),
+        PRIMARY KEY (id)
+);
+'''
