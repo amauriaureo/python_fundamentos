@@ -16,5 +16,5 @@ create table tarefa (
 '''
 
 cursor.execute(sql)
-conexao.commit() 
+conexao.commit()
 conexao.close()
