@@ -7,10 +7,9 @@ sql = '''
     create table organizador (
         nome varchar (30),
         email varchar (30),
-        cpf varchar not null primary key (30)
+        cpf varchar not null primary key
     )
 '''
-
 
 cursor.execute(sql)
 conexao.commit()

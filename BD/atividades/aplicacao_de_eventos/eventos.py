@@ -6,9 +6,9 @@ cursor = conexao.cursor()
 sql = '''
     create table eventos (
         titulo varchar(30),
-        data varchar(30),
-        local varchar(30),
-        organizador_cpf int not null,
+        dia varchar(30),
+        localizacao varchar(30),
+        organizador_cpf varchar not null,
             FOREIGN KEY (organizador_cpf) REFERENCES organizador(cpf)
     )
 '''
