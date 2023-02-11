@@ -17,9 +17,9 @@ evento_id = input("Digite o ID do evento que deseja atualizar: ")
 descricao = input("Digite a nova descricao: ")
 data = input("Digite a nova data: ")
 
-sql = 'update evento set descricao =?, data = ?'
+sql = 'update evento set descricao =?, data = ? where id = ?'
 
-valores = [descricao, data]
+valores = [descricao, data, evento_id]
 cursor.execute(sql, valores)
 conexao.commit()
 conexao.close()
