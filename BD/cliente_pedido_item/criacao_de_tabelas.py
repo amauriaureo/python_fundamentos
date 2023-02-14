@@ -10,7 +10,6 @@ CREATE TABLE cliente (
     CONSTRAINT cliente_UN UNIQUE (cpf)
 );
 '''
-
 cursor = conexao.cursor()
 cursor.execute(sql_cliente)
 
@@ -23,3 +22,18 @@ CREATE TABLE pedido (
 );
 '''
 cursor.execute(sql_pedido)
+
+sql_item_pedido = '''
+CREATE TABLE item_pedido (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    pedido_id INTEGER NOT NULL,
+    produto TEXT(100),
+    valor REAL,
+    quantidade INTEGER,
+    CONSTRAINT item_pedido_FK FOREIGN KEY (pedido_id) REFERENCES pedido(id)
+);
+'''
+cursor.execute(sql_item_pedido)
+
+conexao.commit()
+conexao.close()
