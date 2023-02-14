@@ -13,3 +13,13 @@ CREATE TABLE cliente (
 
 cursor = conexao.cursor()
 cursor.execute(sql_cliente)
+
+sql_pedido = '''
+CREATE TABLE pedido (
+    id INTENGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "data" TEXT(20) NOT NULL,
+    cliente_id INTENGER NOT NULL,
+    CONSTRAINT pedido_FK FOREIGN KEY (cliente_id) REFERENCES cliente(id)
+);
+'''
+cursor.execute(sql_pedido)
