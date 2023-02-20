@@ -15,7 +15,7 @@ mensagem = input("Digite sua mensagem: ")
 hoje = datetime.date.today()
 hoje = hoje.strftime('%Y-%m-%d')
 
-sql = 'insert into mensagem (usuario_id, mensagem, data) values (?, ?, ?)'
+sql = 'insert into mensagem (usuario_id, texto, data) values (?, ?, ?)'
 
 valores = [usuario[0], mensagem, hoje]
 
