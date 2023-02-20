@@ -13,4 +13,11 @@
 5. Marcar uma tarefa como concluída.
 
 Para esta atividade, recomenda-se criar o banco de dados e as tabelas utilizando o DBeaver e, 
-para cada item da atividade, fazer um programa Python nos moldes dos programas criados nesta semana.
+para cada item da atividade, fazer um programa Python.
+
+---------------------------------------------------------------------
+Tabelas(Tarefa; Categoria)
+
+Colunas de:
+Tarefa(id, nome, data, status, categoria_id)
+Categoria(id, nome)
