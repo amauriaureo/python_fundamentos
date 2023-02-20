@@ -17,4 +17,6 @@ def validar_login(cursor):
         usuario = resultado
         break
 
+    if usuario is None:
+        raise Exception('Email ou senha inválidos"')
     return usuario
