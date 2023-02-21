@@ -21,3 +21,17 @@ Tabelas(Tarefa; Categoria)
 Colunas de:
 Tarefa(id, nome, data, status, categoria_id)
 Categoria(id, nome)
+
+        Execução:
+- Tarefas(5):
+Criar; 
+atualizar, 
+deletar, 
+listar afazeres de um dia específico, 
+marcar tarefa como conluída
+
+- Categorias(4):
+Criar; 
+atualizar, 
+deletar, 
+listar todas as categorias
