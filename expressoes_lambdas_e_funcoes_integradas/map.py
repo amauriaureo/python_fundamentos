@@ -16,3 +16,14 @@ for r in raios:
     areas.append(area(r))
 
 print(areas)
+
+# Forma 2 - Map
+
+# Map e uma função que receber dois parâmetros: O primeiro a função, o segundo um iteravel. Retorna um Map Object
+
+areas = map(area, raios)
+
+print(areas)
+print(type(areas))
+
+print(list(areas))
