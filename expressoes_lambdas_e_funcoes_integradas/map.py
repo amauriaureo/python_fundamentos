@@ -27,3 +27,7 @@ print(areas)
 print(type(areas))
 
 print(list(areas))
+
+# Forma 3 - Map com Labda.
+
+print(list(map(lambda r: math.pi * (r ** 2), raios)))
