@@ -17,3 +17,9 @@ print(list(res))
 
 # OBS: Assim como na função map(), após serem utilizados os dados de filter()
 # eles são excluidos da memória
+
+paises = ['Cuba', '', 'Venezuela', '', 'Equador', '', 'Argentina', '', 'Brasil']
+res = filter(None, paises)
+res2 = filter(lambda pais: len(pais) > 0, paises)
+print(list(res))
+print(list(res2))
