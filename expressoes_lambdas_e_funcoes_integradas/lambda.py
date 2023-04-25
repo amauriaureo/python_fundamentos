@@ -26,3 +26,10 @@ calc = lambda x: 3 * x + 1
 
 print(calc(4))
 print(calc(7))
+
+# Expressões lambdas com multiplas entradas.
+
+nome_completo = lambda nome, sobrenome: nome.strip().title() + ' ' + sobrenome.strip().title()
+
+print(nome_completo("  bOb  ", "dYLAN   "))
+print(nome_completo("  kEITH  ", "     RICHARDs   "))
