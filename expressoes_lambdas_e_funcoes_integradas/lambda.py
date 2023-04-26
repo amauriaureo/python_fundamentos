@@ -48,3 +48,12 @@ print(amar())
 print(uma(6))
 print(duas(5, 7))
 print(tres(3, 6, 9))
+
+# OBS: Se passarmos mais argumentos do que parâmetros esperados teremos TypeError
+
+# Outro exemplo
+
+influencers = ['Isaac Asimov', 'Ray Charles', 'Travis Barker',
+               'Taylor Hawkins', 'Jim Carey', 'Will Smith',
+               "Henry David Throreau", "Paulo Coelho" ]
+
