@@ -80,3 +80,8 @@ print(teste(0))
 print(teste(1))
 print(teste(2))
 print(teste(3))
+
+print(geradora_funcao_quadratica(2, 3, -5)(2))
+
+# Expressoes Lambdas são utilizadas para ordenar e filtrar dados,
+# mas não se limitam a isso
