@@ -57,3 +57,8 @@ influencers = ['Isaac Asimov', 'Ray Charles', 'Travis Barker',
                'Taylor Hawkins', 'Jim Carey', 'Will Smith',
                "Henry David Throreau", "Paulo Coelho" ]
 
+print(influencers)
+
+influencers.sort(key=lambda sobrenome: sobrenome.split(' ')[-1].lower())
+
+print(influencers)
