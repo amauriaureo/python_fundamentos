@@ -62,3 +62,13 @@ print(influencers)
 influencers.sort(key=lambda sobrenome: sobrenome.split(' ')[-1].lower())
 
 print(influencers)
+
+
+# FUnção Quadrática
+# f(x) = a * x ** 2 + b * x + c
+
+# Definindo a função
+
+def geradora_funcao_quadratica(a, b, c):
+    """Retorna a função f(x) = a*x**2 + b * x + c"""
+    return lambda x: a * x ** 2 + b * x + c
