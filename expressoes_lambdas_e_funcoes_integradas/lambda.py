@@ -33,3 +33,6 @@ nome_completo = lambda nome, sobrenome: nome.strip().title() + ' ' + sobrenome.s
 
 print(nome_completo("  bOb  ", "dYLAN   "))
 print(nome_completo("  kEITH  ", "     RICHARDs   "))
+
+# Em funções Python, podemos ter nenhuma ou varias entradas. Em Lambdas também.
+
