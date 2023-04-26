@@ -36,3 +36,8 @@ print(nome_completo("  kEITH  ", "     RICHARDs   "))
 
 # Em funções Python, podemos ter nenhuma ou varias entradas. Em Lambdas também.
 
+amar = lambda: 'Como não amar Python?'
+
+uma = lambda x: 3 * x + 1
+
+
