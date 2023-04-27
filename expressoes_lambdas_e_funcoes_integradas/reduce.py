@@ -19,9 +19,15 @@ dados = [a1, a2, a3, ..., an]
 def funcao(x, y):
     return x * y
 
-Assim como map() e filter(), a função reduce() recebe dois parâmetros: a função e o iterável.
+Assim como map() e filter(), a função reduce() recebe dois parâmetros:
+1. a função e 2. o iterável.
 
 reduce(funcao, dados)
 
 A função reduce(), funciona da seguinte forma:
+    Passo 1: res1 = f(a1, a2)
+# Aplica a função nos dois primeiros elementos da coleção e guarda o resultado.
+    Passo 2: res2 = f(res1, a3)
+# Aplica a função passando o resultado do passo1 mais o terceiro elemento e guarda o resultado.
+E isso é repetido até o final.
 """
