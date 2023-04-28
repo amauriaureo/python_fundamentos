@@ -46,3 +46,7 @@ Alternativamente, poderiamos ver a função reduce() como:
 funcao(funcao(funcao(a1, a2), a3), a4), ...), an)
 
 """
+
+# Como funciona na prática.
+
+# Vamos utilizar a função reduce() para multiplicar todos os numeros de uma lista
