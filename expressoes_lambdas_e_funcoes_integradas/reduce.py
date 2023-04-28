@@ -54,3 +54,9 @@ funcao(funcao(funcao(a1, a2), a3), a4), ...), an)
 from functools import reduce
 
 dados = [2, 3, 4, 5, 7, 11, 13, 17, 19, 23, 29]
+
+# Para utilizar o reduce() nós precisamos de uma função que receba dois parâmetros
+multi = lambda x, y: x * y
+
+res = reduce(multi, dados)
+print(res)
