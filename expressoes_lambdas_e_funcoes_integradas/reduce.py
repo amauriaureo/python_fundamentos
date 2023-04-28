@@ -52,3 +52,5 @@ funcao(funcao(funcao(a1, a2), a3), a4), ...), an)
 # Vamos utilizar a função reduce() para multiplicar todos os numeros de uma lista
 
 from functools import reduce
+
+dados = [2, 3, 4, 5, 7, 11, 13, 17, 19, 23, 29]
