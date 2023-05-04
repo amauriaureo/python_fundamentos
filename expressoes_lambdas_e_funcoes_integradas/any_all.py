@@ -3,7 +3,6 @@ Any e All
 
 all() -> Retorna True se todos os elementos do iterável são verdadeiros ou ainda se o iterável está vazio.
 
-"""
 
 # Exemplo all()
 
@@ -27,3 +26,7 @@ print(all([letra for letra in 'eio' if letra in 'fkp']))  # retorna '[]' vazio T
 print(bool([]))  # False
 
 print(all([num for num in [4, 2, 10, 8, 4] if num % 2 == 0]))
+
+
+any() -> 
+"""
