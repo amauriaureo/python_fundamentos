@@ -28,5 +28,5 @@ print(bool([]))  # False
 print(all([num for num in [4, 2, 10, 8, 4] if num % 2 == 0]))
 
 
-any() -> 
+any() -> Retorna True se qualquer elemento do iterável for verdadeiro.
 """
