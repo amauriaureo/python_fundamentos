@@ -28,3 +28,17 @@ print(type(listas))
 print(listas[0])  # [1, 2, 3]
 print(listas[0][1])  # 2
 print(listas[2][1])  # 8
+print(listas[2][-2])  # 8
+
+# Iterando com loops em uma lista aninhada
+print('*' * 100)
+
+for lista in listas:
+    print(lista)
+
+print('*' * 100)
+
+for lista in listas:
+    for num in lista:
+        print(num)
+
