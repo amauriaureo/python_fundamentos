@@ -14,3 +14,17 @@ Em Python nós temos as Listas
 
 numeros = [1, 'b', 2.65, True, 4, 5]
 """
+
+# Exemplos
+
+listas = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]  # Matrix 3X3
+
+print(listas)
+
+print(type(listas))
+
+# Como fazemos para acessar os dados?
+
+print(listas[0])  # [1, 2, 3]
+print(listas[0][1])  # 2
+print(listas[2][1])  # 8
