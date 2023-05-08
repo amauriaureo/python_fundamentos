@@ -7,5 +7,8 @@ Se quisermos criar uma lista fazemos:
 
 lista = [1, 2, 3, 4]
 
+Se quiseremos criar uma tupla:
+
+tupla = (1, 2, 3, 4)
 
 """
