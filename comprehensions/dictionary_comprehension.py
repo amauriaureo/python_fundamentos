@@ -11,4 +11,8 @@ Se quiseremos criar uma tupla:
 
 tupla = (1, 2, 3, 4)
 
+Se quisermos criar um set (conjunto)
+
+conjunto = {1, 2, 3, 4}
+
 """
