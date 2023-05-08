@@ -35,8 +35,14 @@ print(numeros.items())
 print(quadrado)
 
 
-numeros_lista = [1, 2, 3, 4, 5]
+numeros = [1, 2, 3, 4, 5]  # Tpla, lista ou set roda da mesma forma
 
-quadrados = {valor: valor ** 2 for valor in numeros_lista}
+quadrados = {valor: valor ** 2 for valor in numeros}
 
 print(quadrados)
+
+# Exemplo com lógica condicional
+
+res = {num: ('par' if num % 2 == 0 else 'impar') for num in numeros}
+
+print(res)
