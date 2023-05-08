@@ -33,3 +33,10 @@ quadrado = {chave: valor ** 2 for chave, valor in numeros.items()}
 
 print(numeros.items())
 print(quadrado)
+
+
+numeros_lista = [1, 2, 3, 4, 5]
+
+quadrados = {valor: valor ** 2 for valor in numeros_lista}
+
+print(quadrados)
