@@ -17,5 +17,10 @@ conjunto = {1, 2, 3, 4}
 
 Se quisermos criar um dicionário:
 
-dicionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4, }
+dicionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+# Sintaxy
+
+{chave: valor for valor in iteravel}  # Dict Compr
+[valor for valor in iteravel]  # List Compr
 """
