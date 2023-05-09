@@ -21,3 +21,7 @@ print(numeros)
 # Desafio! Fazer alteração na estrutura acima para gerar um dicionário
 numeros = {x: x ** 2 for x in range(10)}
 print(numeros)
+
+# 3.
+letras = {letra for letra in 'Python e Django'}
+print(letras)
