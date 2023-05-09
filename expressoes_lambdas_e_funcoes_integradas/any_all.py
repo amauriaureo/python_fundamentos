@@ -34,6 +34,6 @@ print(any([0, 1, 2, 3, 4]))  # True
 print(any([0, False, {}, (), []]))  # False
 nomes = ['Carlos', 'Camila', 'Carla', 'Cassiano', 'Cristina', 'Vanessa']
 
-print(all([nome[0] == 'C' for nome in nomes]))
+print(all([nome[0] == 'C' for nome in nomes]))  # False
 
 print(any([num for num in [4, 2, 10, 6, 9, 8] if num % 2 == 0]))  # True
