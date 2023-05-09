@@ -35,3 +35,11 @@ from sys import getsizeof
 print(getsizeof('Geek'))
 
 print(getsizeof('University'))
+
+print(getsizeof(9))
+
+print(getsizeof(99))
+
+print(getsizeof(6858626379263792697362963232))
+
+print(getsizeof(True))
