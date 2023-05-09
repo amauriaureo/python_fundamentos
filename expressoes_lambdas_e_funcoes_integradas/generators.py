@@ -1,5 +1,15 @@
+"""
+Generators
 
+Em aulas anteriores(Comprehension), estudamos:
+- List Comprehension;
+- Dictionary Comprehension;
+- Set Comprehension;
 
+Não vimos:
+- Tuple Comprehension... porque eas se chamem Generators
+
+"""
 
 nomes = ['Carlos', 'Camila', 'Carla', 'Cassiano', 'Cristina', 'Vanessa']
 
