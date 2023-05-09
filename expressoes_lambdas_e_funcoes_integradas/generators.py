@@ -9,7 +9,6 @@ Em aulas anteriores(Comprehension), estudamos:
 Não vimos:
 - Tuple Comprehension... porque eas se chamem Generators
 
-"""
 
 nomes = ['Carlos', 'Camila', 'Carla', 'Cassiano', 'Cristina', 'Vanessa']
 
@@ -26,3 +25,13 @@ print(res)
 rez = (nome[0] == 'C' for nome in nomes)
 print(type(rez))
 print(rez)
+
+"""
+# Qual é a utilidade de getsizeof()? ->
+# getsizeof - pega o tamanho de.
+# Retorna a quantidade de bytes em memória do elemento passado como parâmetro.
+from sys import getsizeof
+
+print(getsizeof('Geek'))
+
+print(getsizeof('University'))
