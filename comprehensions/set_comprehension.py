@@ -17,3 +17,5 @@ print(numeros)
 # 2.
 numeros = {x ** 2 for x in range(10)}
 print(numeros)
+
+# Desafio! Fazer alteração na estrutura acima para gerar um dicionário
