@@ -30,8 +30,10 @@ print(rez)
 # Qual é a utilidade de getsizeof()? ->
 # getsizeof - pega o tamanho de.
 # Retorna a quantidade de bytes em memória do elemento passado como parâmetro.
+
 from sys import getsizeof
 
+"""
 print(getsizeof('Geek'))
 
 print(getsizeof('University'))
@@ -43,3 +45,6 @@ print(getsizeof(99))
 print(getsizeof(6858626379263792697362963232))
 
 print(getsizeof(True))
+"""
+# Gerando uma lista de números com List Comprehension
+list_comp = getsizeof([x * 10 for x in range(1000)])
