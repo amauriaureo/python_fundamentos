@@ -48,3 +48,6 @@ print(getsizeof(True))
 """
 # Gerando uma lista de números com List Comprehension
 list_comp = getsizeof([x * 10 for x in range(1000)])
+
+# Gerando uma lista de números com Set Comprehension
+set_comp = getsizeof({x * 10 for x in range(1000)})
