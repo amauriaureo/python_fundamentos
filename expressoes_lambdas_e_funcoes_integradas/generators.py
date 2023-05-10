@@ -61,3 +61,4 @@ gen = getsizeof(x * 10 for x in range(1000))
 
 print('Para fazer a mesma tarefa gastamos em memória:')
 print(f'List Comprehension: {list_comp} bytes')
+print(f'Set Comprehension: {set_comp} bytes')
