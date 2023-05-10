@@ -57,3 +57,6 @@ dic_comp = getsizeof({x: x * 10 for x in range(1000)})
 
 # Gerando uma lista de números com Generator
 gen = getsizeof(x * 10 for x in range(1000))
+
+
+print('Para fazer a mesma tarefa gastamos em memória:')
