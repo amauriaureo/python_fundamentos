@@ -64,3 +64,12 @@ print(f'List Comprehension: {list_comp} bytes')
 print(f'Set Comprehension: {set_comp} bytes')
 print(f'Dictionary Comprehension: {dic_comp} bytes')
 print(f'Generator Expression: {gen} bytes')
+
+
+"""
+Generator ocupou 104 bytes(+ leve).
+Ele ocupa tão pouco byte pois ele não gerou nada ainda,
+apenas deixou tudo preparado para quando precisar utilizar e,
+quando utilizar, ele gera em memória e apaga em memória, ele não fica ocupando,
+já os Comprehensions ficarão em memória até o final do programa.
+"""
