@@ -73,3 +73,12 @@ apenas deixou tudo preparado para quando precisar utilizar e,
 quando utilizar, ele gera em memória e apaga em memória, ele não fica ocupando,
 já os Comprehensions ficarão em memória até o final do programa.
 """
+
+# Iterando com Generator Expression
+
+gen = (x * 10 for x in range(1000))
+print(gen)
+print(type(gen))
+
+for num in gen:
+    print(num)
