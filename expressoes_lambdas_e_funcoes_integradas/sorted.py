@@ -10,13 +10,18 @@ Podemos utilizar o sorted() com qualquer iterável.
 Como o próprio nome diz, sorted() serve para ordenar,
 
 OBS: O sorted, SEMPRE retorna uma lista com os elementos do iterável ordenados
-"""
+
 
 # Exemplo
 
-numeros = [6, 1, 8, 10]
+numeros = (6, 1, 8, 10)  # () [] ou {}
 print(numeros)
-print(sorted(numeros))  # Ordena do menor para o maior
+print("set:", set(sorted(numeros)))  # Ordena do menor para o maior
+print("tuple:", tuple(sorted(numeros)))
+print("lista:", list(sorted(numeros)))
 print(numeros)
 
 print(sorted(numeros, reverse=True))
+"""
+
+# Utilizando sorted() para coisas mais complexas.
