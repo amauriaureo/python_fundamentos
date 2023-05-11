@@ -37,3 +37,5 @@ usuarios = [
 print(usuarios)
 
 print(sorted(usuarios, key=len))
+
+print(sorted(usuarios, key=lambda usuario: usuario["username"]))
