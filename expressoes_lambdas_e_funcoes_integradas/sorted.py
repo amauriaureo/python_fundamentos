@@ -14,7 +14,9 @@ OBS: O sorted, SEMPRE retorna uma lista com os elementos do iterável ordenados
 
 # Exemplo
 
-numeros = {6, 1, 8, 10}
+numeros = [6, 1, 8, 10]
 print(numeros)
 print(sorted(numeros))  # Ordena do menor para o maior
 print(numeros)
+
+print(sorted(numeros, reverse=True))
