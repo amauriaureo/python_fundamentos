@@ -29,7 +29,11 @@ print(sorted(numeros, reverse=True))
 usuarios = [
     {"username": "samuel", "tweets": ["Eu adoro bolos", "Eu adoro pizzas"]},
     {"username": "joana", "tweets": ["Eu adoro meu cachorro"]},
-    {"username": "dylanmaster", "tweets": []},
+    {"username": "dylanmaster", "tweets": [], "cor": "amarelo"},
     {"username": "crazylapton", "tweets": ["Fui passear com meu cachorro"]},
-    {"username": "jandira123", "tweets": []},
+    {"username": "jandira123", "tweets": [], "cor": "preto", "musica": "rock"},
 ]
+
+print(usuarios)
+
+print(sorted(usuarios, key=len))
