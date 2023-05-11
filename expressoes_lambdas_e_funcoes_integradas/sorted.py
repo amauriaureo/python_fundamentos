@@ -56,3 +56,6 @@ musicas = [
 
 # Ordena da menos tocada para a mais tocada
 print(sorted(musicas, key=lambda musica: musica["tocou"]))
+
+# Ordena da menos tocada para a mais tocada
+print(sorted(musicas, key=lambda musica: musica["tocou"], reverse=True))
