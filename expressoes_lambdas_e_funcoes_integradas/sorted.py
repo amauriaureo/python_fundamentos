@@ -22,7 +22,7 @@ print("lista:", list(sorted(numeros)))
 print(numeros)
 
 print(sorted(numeros, reverse=True))
-"""
+
 
 # Utilizando sorted() para coisas mais complexas.
 
@@ -43,3 +43,13 @@ print(sorted(usuarios, key=lambda usuario: usuario["username"]))
 
 # Ordenando pelo numero de tweets - Ordem Alfabética
 print(sorted(usuarios, key=lambda usuario: len(usuario["tweets"])))
+"""
+
+# Última exemplo
+
+musicas = [
+    {"título": "Iron man", "tocou": 3},
+    {"título": "Thunderstruck", "tocou": 2},
+    {"título": "Nothing Else Matters", "tocou": 4},
+    {"título": "Come Together", "tocou": 32}
+]
