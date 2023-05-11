@@ -25,3 +25,11 @@ print(sorted(numeros, reverse=True))
 """
 
 # Utilizando sorted() para coisas mais complexas.
+
+usuarios = [
+    {"username": "samuel", "tweets": ["Eu adoro bolos", "Eu adoro pizzas"]},
+    {"username": "joana", "tweets": ["Eu adoro meu cachorro"]},
+    {"username": "dylanmaster", "tweets": []},
+    {"username": "crazylapton", "tweets": ["Fui passear com meu cachorro"]},
+    {"username": "jandira123", "tweets": []},
+]
