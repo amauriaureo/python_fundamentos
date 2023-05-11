@@ -53,3 +53,6 @@ musicas = [
     {"título": "Nothing Else Matters", "tocou": 4},
     {"título": "Come Together", "tocou": 32}
 ]
+
+# Ordena da menos tocada para a mais tocada
+print(sorted(musicas, key=lambda musica: musica["tocou"]))
