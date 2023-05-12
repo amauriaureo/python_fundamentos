@@ -5,3 +5,14 @@ max() retorna o maior valor em um iterável ou o maior de dois ou mais elementos
 
 """
 
+# Exemplos
+
+lista = [1, 8, 10, 100, 327]
+print(max(lista))
+
+tupla = (1, 8, 10, 100, 327)
+print(max(tupla))
+
+
+conjunto = {1, 8, 10, 100, 327}
+print(max(conjunto))
