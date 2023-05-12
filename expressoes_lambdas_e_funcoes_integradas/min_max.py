@@ -20,3 +20,8 @@ print(max(conjunto))
 dicionario = {"a": 1, "b": 8, "c": 10, "d": 100, "e": 327}
 print(max(dicionario))
 print(max(dicionario.values()))
+
+# Faça um programa que receba dois valores do usuário e mostre o maior
+val1 = int(input('Informe o primeiro valor: '))
+val2 = int(input('Informe o segundo valor: '))
+print(max(val1, val2))
