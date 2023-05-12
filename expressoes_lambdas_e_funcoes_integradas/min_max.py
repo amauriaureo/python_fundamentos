@@ -16,3 +16,7 @@ print(max(tupla))
 
 conjunto = {1, 8, 10, 100, 327}
 print(max(conjunto))
+
+dicionario = {"a": 1, "b": 8, "c": 10, "d": 100, "e": 327}
+print(max(dicionario))
+print(max(dicionario.values()))
