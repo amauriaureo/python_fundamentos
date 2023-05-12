@@ -3,8 +3,6 @@ Min e Max
 
 max() retorna o maior valor em um iterável ou o maior de dois ou mais elementos
 
-"""
-
 # Exemplos
 
 lista = [1, 8, 10, 100, 327]
@@ -31,3 +29,16 @@ print(max('a', 'ab', 'abc'))
 print(max('a', 'b', 'c', 'd'))
 print(max(3.145, 5.789))
 print(max("Amauri Rodrigues"))
+
+
+min() retorna o menor valor em um iterável ou o menor de dois ou mais elementos
+# o contrário do max()
+"""
+musicas = [
+    {"título": "Iron man", "tocou": 3},
+    {"título": "Thunderstruck", "tocou": 2},
+    {"título": "Nothing Else Matters", "tocou": 4},
+    {"título": "Come Together", "tocou": 32}
+]
+print(max(musicas, key=lambda musica: musica['tocou'])['título'])
+print(min(musicas, key=lambda musica: musica['tocou'])['título'])
