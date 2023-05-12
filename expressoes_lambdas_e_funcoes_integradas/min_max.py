@@ -42,3 +42,12 @@ musicas = [
 ]
 print(max(musicas, key=lambda musica: musica['tocou'])['título'])
 print(min(musicas, key=lambda musica: musica['tocou'])['título'])
+
+max = 0
+for musica in musicas:
+    if musica['tocou'] > max:
+        max = musica['tocou']
+
+for musica in musicas:
+    if musica['tocou'] == max:
+        print(musica['título'])
