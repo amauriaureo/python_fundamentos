@@ -51,3 +51,13 @@ for musica in musicas:
 for musica in musicas:
     if musica['tocou'] == max:
         print(musica['título'])
+
+
+min = 11111111
+for musica in musicas:
+    if musica['tocou'] < min:
+        min = musica['tocou']
+
+for musica in musicas:
+    if musica['tocou'] == min:
+        print(musica['título'])
