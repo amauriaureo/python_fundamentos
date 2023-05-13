@@ -42,9 +42,13 @@ for letra in reversed('Amauri Rodrigues'):
     print(letra, end='')
 
 print('\n')
+
 # Iterando sem o uso do for
 print(''.join(list(reversed('Amauri Rodrigues'))))
 
 # Slice de Strings
-
 print('Amauri Rodrigues'[::-1])
+
+# Fazendo loop for reverso
+for n in reversed(range(0, 10)):
+    print(n)
