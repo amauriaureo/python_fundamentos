@@ -40,3 +40,7 @@ print(set(reversed(lista)))  # No set não definimos ordem.
 # Podemos iterar sobre o reversed
 for letra in reversed('Amauri Rodrigues'):
     print(letra, end='')
+
+print('\n')
+# Iterando sem o uso do for
+print(''.join(list(reversed('Amauri Rodrigues'))))
