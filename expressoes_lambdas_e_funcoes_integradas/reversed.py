@@ -13,4 +13,15 @@ A função reverse() só funciona e [listas].
 Já a função reversed() funciona com qualquer iterável.
 
 Sua função é inverter o iterável.
+
+A função reversed() retorna um iterável chamado 'list_reverseiterator'
 """
+
+# Exemplos
+
+lista = [1, 2, 3, 4, 5]
+
+res = reversed(lista)
+
+print(res)
+print(type(res))
