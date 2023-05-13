@@ -30,3 +30,6 @@ print(type(res))
 
 # Lista
 print(list(reversed(lista)))
+
+# Tupla
+print(tuple(reversed(lista)))
