@@ -52,3 +52,7 @@ print('Amauri Rodrigues'[::-1])
 # Fazendo loop for reverso
 for n in reversed(range(0, 10)):
     print(n)
+
+# Utilizando range
+for n in range(9, -1, -1):
+    print(n)
