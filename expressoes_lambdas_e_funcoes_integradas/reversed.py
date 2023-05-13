@@ -36,3 +36,7 @@ print(tuple(reversed(lista)))
 
 # Conjunto
 print(set(reversed(lista)))  # No set não definimos ordem.
+
+# Podemos iterar sobre o reversed
+for letra in reversed('Amauri Rodrigues'):
+    print(letra, end='')
