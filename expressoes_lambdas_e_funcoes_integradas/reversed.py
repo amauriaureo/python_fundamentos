@@ -25,3 +25,8 @@ res = reversed(lista)
 
 print(res)
 print(type(res))
+
+# Podemos converter o elemento retornado para uma lista, tupla ou conjunto.
+
+# Lista
+print(list(reversed(lista)))
