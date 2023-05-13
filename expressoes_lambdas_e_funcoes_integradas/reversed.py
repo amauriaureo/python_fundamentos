@@ -35,4 +35,4 @@ print(list(reversed(lista)))
 print(tuple(reversed(lista)))
 
 # Conjunto
-print(set(reversed(lista)))
+print(set(reversed(lista)))  # No set não definimos ordem.
