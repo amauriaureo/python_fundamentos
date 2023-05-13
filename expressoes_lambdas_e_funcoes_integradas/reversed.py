@@ -33,3 +33,6 @@ print(list(reversed(lista)))
 
 # Tupla
 print(tuple(reversed(lista)))
+
+# Conjunto
+print(set(reversed(lista)))
