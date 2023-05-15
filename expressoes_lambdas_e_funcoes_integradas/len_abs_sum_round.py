@@ -34,3 +34,4 @@ e retorna a soma total dos elementos, incluindo o valor inicial.
 
 OBS: O valor iniciail default = 0
 """
+print(sum([1, 2, 3, 4, 5], -5))
