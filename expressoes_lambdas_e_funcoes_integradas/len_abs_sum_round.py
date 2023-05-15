@@ -15,6 +15,7 @@ print(len(range(0, 9)))
 # Por baixo dos panos está sendo executado o Dunder len()
 print('Amauri Rodrigues'.__len__())
 
+
 # Abs
 
 abs() -> Retorna o valor absoluto de um número inteiro ou real,
@@ -25,4 +26,11 @@ print(abs(5))
 print(abs(3.14))
 print(abs(-3.14))
 
+
+# Sum
+
+sum() -> Recebe como parâmetro um iteravel, podedo receber um valor inicial,
+e retorna a soma total dos elementos, incluindo o valor inicial.
+
+OBS: O valor iniciail default = 0
 """
