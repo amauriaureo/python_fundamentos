@@ -33,10 +33,19 @@ sum() -> Recebe como parâmetro um iteravel, podedo receber um valor inicial,
 e retorna a soma total dos elementos, incluindo o valor inicial.
 
 OBS: O valor iniciail default = 0
-"""
+
 print(sum([1, 2, 3, 4, 5], -5))
 print(sum([1, 2, 3, 4, 5]))
 print(sum([1.1, 2.2, 3.3, 4.4, 5.9]))
 print(sum((1, 2, 3, 4, 5)))
 print(sum({1, 2, 3, 4, 5}))
 print(sum({'a': 1, 'b': 2, 'c': 3, 'd': 4}.values()))
+# Sum não vai funcionar com strings.
+
+# Round
+
+round() ->
+Retorna um número arredondado para n digito de precisão após a casa decimal.
+Se a precisão não for informada, retorna o inteiro mais proxima da entrada.
+
+"""
