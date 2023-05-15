@@ -5,3 +5,7 @@ Len, Abs, Sum, Round
 
 len() -> Retorna o número de itens(tamanho) do iterável
 """
+
+
+# Por baixo dos panos está sendo executado o Dunder len()
+print('Amauri Rodrigues'.__len__())
