@@ -49,3 +49,10 @@ Retorna um número arredondado para n digito de precisão após a casa decimal.
 Se a precisão não for informada, retorna o inteiro mais proxima da entrada.
 
 """
+# Exemplos round
+
+print(round(10.2))
+print(round(10.5))
+print(round(10.6))
+print(round(1.2121212121, 2))
+print(round(1.2199999, 2))
