@@ -20,4 +20,9 @@ print('Amauri Rodrigues'.__len__())
 abs() -> Retorna o valor absoluto de um número inteiro ou real,
 De forma basica seria o seu valor real sem o sinal.
 
+print(abs(-5))
+print(abs(5))
+print(abs(3.14))
+print(abs(-3.14))
+
 """
