@@ -35,3 +35,8 @@ e retorna a soma total dos elementos, incluindo o valor inicial.
 OBS: O valor iniciail default = 0
 """
 print(sum([1, 2, 3, 4, 5], -5))
+print(sum([1, 2, 3, 4, 5]))
+print(sum([1.1, 2.2, 3.3, 4.4, 5.9]))
+print(sum((1, 2, 3, 4, 5)))
+print(sum({1, 2, 3, 4, 5}))
+print(sum({'a': 1, 'b': 2, 'c': 3, 'd': 4}.values()))
