@@ -26,3 +26,12 @@ print(set(zip1))
 
 zip1 = zip(lista1, lista2)
 print(dict(zip1))
+
+# O zip utiliza como parâmtro o menor tamanho em iterável.
+# Então, se estiver trabalhando com iteráveis de tamanho diferentes,
+# irá parar quando os elementos do menor iterável acabar.
+
+lista3 = [7, 8, 9, 10, 11]
+
+zip1 = zip(lista1, lista2, lista3)
+print(list(zip1))
