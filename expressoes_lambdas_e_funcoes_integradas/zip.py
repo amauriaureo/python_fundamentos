@@ -44,3 +44,9 @@ dicionario = {'a': 11, 'b': 12, 'c': 13, 'd': 14, 'e': 15}
 
 zt = zip(tupla, lista, dicionario.values())
 print(list(zt))
+
+# Lista de tuplas
+
+dados = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
+
+print(list(zip(*dados)))
