@@ -35,7 +35,6 @@ lista3 = [7, 8, 9, 10, 11]
 zip1 = zip(lista1, lista2, lista3)
 print(list(zip1))
 
-"""
 # Podemos utilizar diferentes iteráveis com zip
 
 tupla = 1, 2, 3, 4, 5
@@ -50,3 +49,13 @@ print(list(zt))
 dados = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
 
 print(list(zip(*dados)))
+
+"""
+
+# Exemplos mais complexos.
+prova1 = [80, 91, 78]
+prova2 = [98, 89, 53]
+alunos = ['maria', 'pedro', 'carla']
+
+final = {dado[0]: max(dado[1], dado[2]) for dado in zip(alunos, prova1, prova2)}
+print(final)
