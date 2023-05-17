@@ -14,4 +14,8 @@ Quando uma função/operação/ação é aplicada a um tipo errado.
 Quando tebtamos acessar um elemento em uma lista ou
 outro tipo de dado indexado utilizando um indice inválido.
 
+5 - ValueError
+Quando uma função/operação vuilt-in (integrada) recebe
+um argumento com tipo correto mas valor inapropriado
+
 """
