@@ -18,4 +18,7 @@ outro tipo de dado indexado utilizando um indice inválido.
 Quando uma função/operação vuilt-in (integrada) recebe
 um argumento com tipo correto mas valor inapropriado
 
+6 - KeyError
+Quando tentamos acessar um dicionário com uma chave que não existe.
+
 """
