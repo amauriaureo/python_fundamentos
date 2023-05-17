@@ -21,4 +21,7 @@ um argumento com tipo correto mas valor inapropriado
 6 - KeyError
 Quando tentamos acessar um dicionário com uma chave que não existe.
 
+7 - AttributeError
+Quando uma variável não tem um atributo/função.
+
 """
