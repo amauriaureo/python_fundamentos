@@ -24,4 +24,6 @@ Quando tentamos acessar um dicionário com uma chave que não existe.
 7 - AttributeError
 Quando uma variável não tem um atributo/função.
 
+8 - IndentationError
+Quando não respeitamos a indentação do Python(4 espaços)
 """
