@@ -27,6 +27,12 @@ outro tipo de dado indexado utilizando um indice inválido.
 5 - ValueError
 Quando uma função/operação built-in (integrada) recebe
 um argumento com tipo correto mas valor inapropriado
+Exemplos:
+print(float('String'))
+#  ValueError: could not convert string to float: 'String'
+
+print(int('String'))
+#  ValueError: invalid literal for int() with base 10: 'String'
 
 
 6 - KeyError
