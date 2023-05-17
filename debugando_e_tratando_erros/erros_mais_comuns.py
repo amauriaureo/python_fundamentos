@@ -41,6 +41,11 @@ Quando tentamos acessar um dicionário com uma chave que não existe.
 
 7 - AttributeError
 Quando uma variável não tem um atributo/função.
+Exemplo:
+tupla = (11, 22, 33, 44)
+print(tupla.sort())
+#  AttributeError: 'tuple' object has no attribute 'sort'
+OBS: se fosse uma [lista] não teria erro.
 
 
 8 - IndentationError
