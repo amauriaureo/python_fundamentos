@@ -50,5 +50,9 @@ OBS: se fosse uma [lista] não teria erro.
 
 8 - IndentationError
 Quando não respeitamos a indentação do Python(4 espaços)
+Exemplo:
+def nova():
+print('Olá, mundo!')
+OBS: faltam os 4 espaços na segunda linha.
 
 """
