@@ -16,4 +16,10 @@ except:
 """
 # Exemplo 1 - Tratando um erro genérico
 
+
+try:
+    geek()
+except:
+    print('Deu algum problema...')
+
 geek()
