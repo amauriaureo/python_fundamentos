@@ -13,7 +13,6 @@ try:
 except:
     //o que deve ser feito em caso de problema
 
-"""
 # Exemplo 1 - Tratando um erro genérico
 
 
@@ -23,3 +22,7 @@ except:
     print('Deu algum problema...')
 
 geek()
+
+OBS: Tratar erro de forma genérica não é a melhor forma de tratamento de erros.
+O ideal é SEMPRE tratar de forma especifica.
+"""
