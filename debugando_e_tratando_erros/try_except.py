@@ -40,3 +40,11 @@ try:
     geek()
 except NameError:
     print('Você está utilizando uma função inexistente...')
+
+
+# Exemplo 4 - Tratando um erro específico.
+
+try:
+    len(5)
+except TypeError:
+    print('Você está utilizando uma função inexistente...')
