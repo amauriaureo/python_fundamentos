@@ -33,7 +33,8 @@ except:
 
 OBS: Tratar erro de forma genérica não é a melhor forma de tratamento de erros.
 O ideal é SEMPRE tratar de forma especifica.
-"""
+
+
 # Exemplo 3 - Tratando um erro específico.
 
 try:
@@ -42,9 +43,11 @@ except NameError:
     print('Você está utilizando uma função inexistente...')
 
 
-# Exemplo 4 - Tratando um erro específico.
+"""
+
+# Exemplo 4 - Tratando um erro específico com detalhes do erro.
 
 try:
     len(5)
-except TypeError:
-    print('Você está utilizando uma função inexistente...')
+except TypeError as err:
+    print(f'A aplicação gerou o seguinte erro: {err}')
