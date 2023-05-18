@@ -50,8 +50,7 @@ try:
 except TypeError as err:
     print(f'A aplicação gerou o seguinte erro: {err}')
 
-"""
-
+    
 # Podemos efetuar diversos tratamentos de erros de uma vez.
 
 try:
@@ -62,3 +61,18 @@ except TypeError as errb:
     print(f'Deu TypeError: {errb}')
 except:
     print('Deu um erro diferente.')
+"""
+
+
+def pega_valor(dicionario, chave):
+    try:
+        return dicionario[chave]
+    except KeyError:
+        return None
+    except TypeError:
+        return None
+
+
+dic = {"nome": "Geek"}
+
+print(pega_valor(8, "nome"))
