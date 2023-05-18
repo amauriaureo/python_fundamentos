@@ -14,6 +14,7 @@ def colore(texto, cor):
 
 colore('true', 7)
 
+"""
 # Exemplo refatorado
 
 
@@ -30,6 +31,7 @@ def colore(texto, cor):
 
 colore('Amauri', 'azul')
 colore('Amauri', 'preto')
+colore('Amauri', 'amarelo')
 
-OBS: O raise finaliza a função, depois dele nada será executado.
-"""
+
+# OBS: O raise finaliza a função, depois dele nada será executado.
