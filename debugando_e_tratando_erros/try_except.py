@@ -15,7 +15,6 @@ except:
 
 # Exemplo 1 - Tratando um erro genérico
 
-
 try:
     geek()
 except:
@@ -23,6 +22,21 @@ except:
 
 geek()
 
+# Exemplo 2 - Tratando um erro genérico
+
+try:
+    len(5)
+except:
+    print('Deu algum problema...')
+
+
+
 OBS: Tratar erro de forma genérica não é a melhor forma de tratamento de erros.
 O ideal é SEMPRE tratar de forma especifica.
 """
+# Exemplo 3 - Tratando um erro específico.
+
+try:
+    geek()
+except NameError:
+    print('Você está utilizando uma função inexistente...')
