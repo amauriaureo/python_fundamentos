@@ -43,11 +43,22 @@ except NameError:
     print('Você está utilizando uma função inexistente...')
 
 
-"""
-
 # Exemplo 4 - Tratando um erro específico com detalhes do erro.
 
 try:
     len(5)
 except TypeError as err:
     print(f'A aplicação gerou o seguinte erro: {err}')
+
+"""
+
+# Podemos efetuar diversos tratamentos de erros de uma vez.
+
+try:
+    geek()
+except NameError as erra:
+    print(f'Deu NameError: {erra}')
+except TypeError as errb:
+    print(f'Deu TypeError: {errb}')
+except:
+    print('Deu um erro diferente.')
