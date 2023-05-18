@@ -14,3 +14,6 @@ except:
     //o que deve ser feito em caso de problema
 
 """
+# Exemplo 1 - Tratando um erro genérico
+
+geek()
