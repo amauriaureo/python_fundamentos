@@ -48,3 +48,17 @@ try:
 except NameError:
     print('Valor incorreto')
 """
+# Exemplo mais complexo !!!CORRETO!!!
+# Responsabilidade pelas entradas das suas funções.
+
+
+def dividir(a, b):
+    try:
+        return a / b
+    except ValueError:
+        return 'Valor incorreto'
+
+
+num1 = int(input('Informe o primeiro número: '))
+num2 = int(input('Informe o segundo número: '))
+print(dividir(num1, num2))
