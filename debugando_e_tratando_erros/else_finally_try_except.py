@@ -28,4 +28,23 @@ finally:
 # OBS: O bloco finally é SEMPRE executado. Independente se houve exceção ou não
 # O finally geralmente é utilizado para fechar ou desalocar recursos.
 
+
+# Exemplo mais complexo !!!ERRADO!!!
+
+
+def dividir(a, b):
+    return a / b
+
+
+num1 = int(input('Informe o primeiro número: '))
+
+try:
+    num2 = int(input('Informe o segundo número: '))
+except ValueError:
+    print('O valor precisa ser numérico')
+
+try:
+    print(dividir(num1, num2))
+except NameError:
+    print('Valor incorreto')
 """
