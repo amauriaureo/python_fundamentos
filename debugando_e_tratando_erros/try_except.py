@@ -50,7 +50,7 @@ try:
 except TypeError as err:
     print(f'A aplicação gerou o seguinte erro: {err}')
 
-    
+
 # Podemos efetuar diversos tratamentos de erros de uma vez.
 
 try:
