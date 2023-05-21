@@ -16,7 +16,7 @@ def dividir(a, b):
 
 print(dividir(4, 7))
 
-"""
+
 # Existem formas mais profissionais de se fazer esse 'debug',
 # utilizando o debugger em Python, podemos fazer isso em diferentes IDE's,
 # como o PyCharm ou utilizando o PDB - Python Debugger.
@@ -52,3 +52,17 @@ print(final)
 # Por isso, ao invés de colocarmos o import do pdb no início do arquivo,
 # nós colocamos somente onde vamos debuggar,
 # e ao finalizar já fazemos a remoção.
+"""
+
+# A partir do Python 3.7, não é
+# mais necessário importar a biblioteca pdb, pois o comando de debug
+# foi incorporado como função bulti-in (integrada) chamada breakpoint()
+
+
+nome = 'Amauri'
+sobrenome = 'Rodrigues'
+breakpoint()
+nome_completo = nome + ' ' + sobrenome
+curso = 'Programação em Python'
+final = nome_completo + ' faz o curso ' + curso
+print(final)
