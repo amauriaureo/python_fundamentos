@@ -17,3 +17,6 @@ def dividir(a, b):
 print(dividir(4, 7))
 
 """
+# Existem formas mais profissionais de se fazer esse 'debug',
+# utilizando o debugger em Python, podemos fazer isso em diferentes IDE's,
+# como o PyCharm ou utilizando o PDB - Python Debugger.
