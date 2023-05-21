@@ -38,7 +38,17 @@ import pdb
 nome = 'Amauri'
 sobrenome = 'Rodrigues'
 pdb.set_trace()
+# import pdb; pdb.set_trace() ****
 nome_completo = nome + ' ' + sobrenome
 curso = 'Programação em Python'
 final = nome_completo + ' faz o curso ' + curso
 print(final)
+
+
+# **** Porque utilizar o debugger nesse formato?
+# import pdb; pdb.set_trace() ****
+# O debug é utilizado durante o desenvolvimento.
+# Costumamos realizar todos os imports de bibliotecas no início do arquivo.
+# Por isso, ao invés de colocarmos o import do pdb no início do arquivo,
+# nós colocamos somente onde vamos debuggar,
+# e ao finalizar já fazemos a remoção.
