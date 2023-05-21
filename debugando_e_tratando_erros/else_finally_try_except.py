@@ -47,18 +47,34 @@ try:
     print(dividir(num1, num2))
 except NameError:
     print('Valor incorreto')
-"""
+
 # Exemplo mais complexo !!!CORRETO!!!
 # Responsabilidade pelas entradas das suas funções.
 
 
 def dividir(a, b):
     try:
-        return a / b
-    except ValueError:
-        return 'Valor incorreto'
+        return int(a) / int(b)
+    except ValueError as erra:
+        return f'Valor incorreto. Erro: {erra}'
+    except ZeroDivisionError as errb:
+        return f'Não e possível realizar uma divisão por zero. Erro: {errb}'
 
 
 num1 = int(input('Informe o primeiro número: '))
 num2 = int(input('Informe o segundo número: '))
 print(dividir(num1, num2))
+"""
+
+# Exemplo mais complexo semi-generico.
+
+
+def dividir(a, b):
+    try:
+        return int(a) / int(b)
+    except (ValueError, ZeroDivisionError):
+        return 'ocorreu um problema'
+
+
+num1 = input('Informe o primeiro número')
+num2 = input('Informe o segundo número')
