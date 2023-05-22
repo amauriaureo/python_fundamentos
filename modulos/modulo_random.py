@@ -22,3 +22,9 @@ from random import uniform
 for i in range(10):
     print(uniform(3, 7))  # 7 não e incluído.
 """
+# randint() -> Gera valores pseudo-aleatórios entre os valores estabelecidos.
+from random import randint
+
+# Gerador de apostas para a mega-sena
+for i in range(6):
+    print(randint(1, 61), end=', ')  # de 1 a 60
