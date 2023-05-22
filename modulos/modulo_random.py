@@ -39,7 +39,7 @@ print(choice(jogadas))
 # shuffle() -> Tem a função  de embralhar dados.
 from random import shuffle
 
-cartas = ['K','Q','J','A','2','3','4','5','6', '7']
+cartas = ['K', 'Q', 'J', 'A', '2', '3', '4', '5', '6', '7']
 
 print(cartas)
 
