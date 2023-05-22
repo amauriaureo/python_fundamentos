@@ -11,9 +11,14 @@ import random
 Ou melhor, importar funções especificas.
 
 Assim ocupa menos memória.
-"""
 
 from random import random
 
 for i in range(10):
     print(random())
+
+from random import uniform
+
+for i in range(10):
+    print(uniform(3, 7))  # 7 não e incluído.
+"""
